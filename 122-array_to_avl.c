@@ -2,11 +2,11 @@
 
 /**
  * array_to_avl - turns an array to a avl tree
- * @array: array to turnns to AVL tree
+ * @array: array to turns to AVL tree
  * @size: size of array
  * Return: AVL tree from array
  */
-avl_t *array_to_avl(int *array, size)
+avl_t *array_to_avl(int *array, size_t size)
 {
 	size_t i, j = 0;
 	avl_t *root;
@@ -27,9 +27,9 @@ avl_t *array_to_avl(int *array, size)
 		{
 			if (avl_insert(&root, array[i]) == NULL)
 			{
-				return (NULL)
+				return (NULL);
 			}
 		}
 	}
-	return (root)
+	return (root);
 }
